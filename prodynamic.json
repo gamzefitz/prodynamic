@@ -1,0 +1,18 @@
+[
+    {
+        "name": "Salary",
+        "seq": 29
+    },
+    {
+        "name": "Employee",
+        "seq": 29
+    },
+    {
+        "name": "Department",
+        "seq": 5
+    },
+    {
+        "name": "Job",
+        "seq": 15
+    }
+]
