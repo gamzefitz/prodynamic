@@ -1,0 +1,77 @@
+[
+    {
+        "department-id": 1,
+        "job-id": 1,
+        "job-title": "Software Developer"
+    },
+    {
+        "department-id": 1,
+        "job-id": 2,
+        "job-title": "Systems Administrator"
+    },
+    {
+        "department-id": 1,
+        "job-id": 3,
+        "job-title": "IT Support Specialist"
+    },
+    {
+        "department-id": 2,
+        "job-id": 4,
+        "job-title": "Financial Analyst"
+    },
+    {
+        "department-id": 2,
+        "job-id": 5,
+        "job-title": "Accountant"
+    },
+    {
+        "department-id": 2,
+        "job-id": 6,
+        "job-title": "Budget Officer"
+    },
+    {
+        "department-id": 5,
+        "job-id": 7,
+        "job-title": "Operations Manager"
+    },
+    {
+        "department-id": 5,
+        "job-id": 8,
+        "job-title": "Process Improvement Analyst"
+    },
+    {
+        "department-id": 5,
+        "job-id": 9,
+        "job-title": "Supply Chain Coordinator"
+    },
+    {
+        "department-id": 3,
+        "job-id": 10,
+        "job-title": "HR Generalist"
+    },
+    {
+        "department-id": 3,
+        "job-id": 11,
+        "job-title": "Talent Acquisition Specialist"
+    },
+    {
+        "department-id": 3,
+        "job-id": 12,
+        "job-title": "Training and Development Officer"
+    },
+    {
+        "department-id": 4,
+        "job-id": 13,
+        "job-title": "Sales Executive"
+    },
+    {
+        "department-id": 4,
+        "job-id": 14,
+        "job-title": "Account Manager"
+    },
+    {
+        "department-id": 4,
+        "job-id": 15,
+        "job-title": "Business Development Representative"
+    }
+]

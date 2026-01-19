@@ -1,0 +1,292 @@
+[
+    {
+        "department-id": 1,
+        "email": "jane.smith@company.com",
+        "employee-id": 1,
+        "first-name": "Jane",
+        "hire-date": "2023-03-10",
+        "is-manager": "False",
+        "job-id": 1,
+        "last-name": "Smith"
+    },
+    {
+        "department-id": 1,
+        "email": "mark.taylor@company.com",
+        "employee-id": 2,
+        "first-name": "Mark",
+        "hire-date": "2021-06-20",
+        "is-manager": "False",
+        "job-id": 2,
+        "last-name": "Taylor"
+    },
+    {
+        "department-id": 1,
+        "email": "lucy.brown@company.com",
+        "employee-id": 3,
+        "first-name": "Lucy",
+        "hire-date": "2022-09-05",
+        "is-manager": "False",
+        "job-id": 2,
+        "last-name": "Brown"
+    },
+    {
+        "department-id": 1,
+        "email": "alan.green@company.com",
+        "employee-id": 4,
+        "first-name": "Alan",
+        "hire-date": "2023-02-12",
+        "is-manager": "False",
+        "job-id": 3,
+        "last-name": "Green"
+    },
+    {
+        "department-id": 1,
+        "email": "nina.white@company.com",
+        "employee-id": 5,
+        "first-name": "Nina",
+        "hire-date": "2024-01-08",
+        "is-manager": "False",
+        "job-id": 3,
+        "last-name": "White"
+    },
+    {
+        "department-id": 2,
+        "email": "paul.adams@company.com",
+        "employee-id": 6,
+        "first-name": "Paul",
+        "hire-date": "2020-04-18",
+        "is-manager": "False",
+        "job-id": 4,
+        "last-name": "Adams"
+    },
+    {
+        "department-id": 2,
+        "email": "emma.clark@company.com",
+        "employee-id": 7,
+        "first-name": "Emma",
+        "hire-date": "2021-11-22",
+        "is-manager": "False",
+        "job-id": 4,
+        "last-name": "Clark"
+    },
+    {
+        "department-id": 2,
+        "email": "brian.hill@company.com",
+        "employee-id": 8,
+        "first-name": "Brian",
+        "hire-date": "2019-07-30",
+        "is-manager": "False",
+        "job-id": 5,
+        "last-name": "Hill"
+    },
+    {
+        "department-id": 2,
+        "email": "sophia.lewis@company.com",
+        "employee-id": 9,
+        "first-name": "Sophia",
+        "hire-date": "2022-05-14",
+        "is-manager": "False",
+        "job-id": 5,
+        "last-name": "Lewis"
+    },
+    {
+        "department-id": 2,
+        "email": "kevin.scott@company.com",
+        "employee-id": 10,
+        "first-name": "Kevin",
+        "hire-date": "2021-09-01",
+        "is-manager": "False",
+        "job-id": 6,
+        "last-name": "Scott"
+    },
+    {
+        "department-id": 2,
+        "email": "olivia.turner@company.com",
+        "employee-id": 11,
+        "first-name": "Olivia",
+        "hire-date": "2023-06-19",
+        "is-manager": "False",
+        "job-id": 6,
+        "last-name": "Turner"
+    },
+    {
+        "department-id": 5,
+        "email": "daniel.walker@company.com",
+        "employee-id": 12,
+        "first-name": "Daniel",
+        "hire-date": "2018-03-25",
+        "is-manager": "True",
+        "job-id": 7,
+        "last-name": "Walker"
+    },
+    {
+        "department-id": 5,
+        "email": "rachel.hall@company.com",
+        "employee-id": 13,
+        "first-name": "Rachel",
+        "hire-date": "2020-10-11",
+        "is-manager": "True",
+        "job-id": 7,
+        "last-name": "Hall"
+    },
+    {
+        "department-id": 5,
+        "email": "tom.young@company.com",
+        "employee-id": 14,
+        "first-name": "Tom",
+        "hire-date": "2021-01-17",
+        "is-manager": "False",
+        "job-id": 8,
+        "last-name": "Young"
+    },
+    {
+        "department-id": 5,
+        "email": "laura.king@company.com",
+        "employee-id": 15,
+        "first-name": "Laura",
+        "hire-date": "2022-08-03",
+        "is-manager": "False",
+        "job-id": 8,
+        "last-name": "King"
+    },
+    {
+        "department-id": 5,
+        "email": "chris.wright@company.com",
+        "employee-id": 16,
+        "first-name": "Chris",
+        "hire-date": "2023-04-27",
+        "is-manager": "False",
+        "job-id": 9,
+        "last-name": "Wright"
+    },
+    {
+        "department-id": 5,
+        "email": "megan.lopez@company.com",
+        "employee-id": 17,
+        "first-name": "Megan",
+        "hire-date": "2024-02-14",
+        "is-manager": "False",
+        "job-id": 9,
+        "last-name": "Lopez"
+    },
+    {
+        "department-id": 3,
+        "email": "hannah.baker@company.com",
+        "employee-id": 18,
+        "first-name": "Hannah",
+        "hire-date": "2019-12-02",
+        "is-manager": "False",
+        "job-id": 10,
+        "last-name": "Baker"
+    },
+    {
+        "department-id": 3,
+        "email": "eric.nelson@company.com",
+        "employee-id": 19,
+        "first-name": "Eric",
+        "hire-date": "2021-06-09",
+        "is-manager": "False",
+        "job-id": 10,
+        "last-name": "Nelson"
+    },
+    {
+        "department-id": 3,
+        "email": "amy.carter@company.com",
+        "employee-id": 20,
+        "first-name": "Amy",
+        "hire-date": "2022-02-21",
+        "is-manager": "False",
+        "job-id": 11,
+        "last-name": "Carter"
+    },
+    {
+        "department-id": 3,
+        "email": "jason.mitchell@company.com",
+        "employee-id": 21,
+        "first-name": "Jason",
+        "hire-date": "2023-07-16",
+        "is-manager": "False",
+        "job-id": 11,
+        "last-name": "Mitchell"
+    },
+    {
+        "department-id": 3,
+        "email": "rebecca.perez@company.com",
+        "employee-id": 22,
+        "first-name": "Rebecca",
+        "hire-date": "2020-05-28",
+        "is-manager": "False",
+        "job-id": 12,
+        "last-name": "Perez"
+    },
+    {
+        "department-id": 3,
+        "email": "david.roberts@company.com",
+        "employee-id": 23,
+        "first-name": "David",
+        "hire-date": "2024-01-05",
+        "is-manager": "False",
+        "job-id": 12,
+        "last-name": "Roberts"
+    },
+    {
+        "department-id": 4,
+        "email": "steven.collins@company.com",
+        "employee-id": 24,
+        "first-name": "Steven",
+        "hire-date": "2018-08-13",
+        "is-manager": "False",
+        "job-id": 13,
+        "last-name": "Collins"
+    },
+    {
+        "department-id": 4,
+        "email": "angela.reed@company.com",
+        "employee-id": 25,
+        "first-name": "Angela",
+        "hire-date": "2021-03-19",
+        "is-manager": "False",
+        "job-id": 13,
+        "last-name": "Reed"
+    },
+    {
+        "department-id": 4,
+        "email": "michael.cook@company.com",
+        "employee-id": 26,
+        "first-name": "Michael",
+        "hire-date": "2020-11-07",
+        "is-manager": "True",
+        "job-id": 14,
+        "last-name": "Cook"
+    },
+    {
+        "department-id": 4,
+        "email": "karen.morgan@company.com",
+        "employee-id": 27,
+        "first-name": "Karen",
+        "hire-date": "2022-09-26",
+        "is-manager": "True",
+        "job-id": 14,
+        "last-name": "Morgan"
+    },
+    {
+        "department-id": 4,
+        "email": "justin.bell@company.com",
+        "employee-id": 28,
+        "first-name": "Justin",
+        "hire-date": "2023-05-04",
+        "is-manager": "False",
+        "job-id": 15,
+        "last-name": "Bell"
+    },
+    {
+        "department-id": 4,
+        "email": "chloe.murphy@company.com",
+        "employee-id": 29,
+        "first-name": "Chloe",
+        "hire-date": "2024-02-01",
+        "is-manager": "False",
+        "job-id": 15,
+        "last-name": "Murphy"
+    }
+]

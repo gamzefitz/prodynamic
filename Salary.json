@@ -1,0 +1,147 @@
+[
+    {
+        "employee_id": 1,
+        "salary_amount": 45000,
+        "salary_id": 1
+    },
+    {
+        "employee_id": 2,
+        "salary_amount": 45000,
+        "salary_id": 2
+    },
+    {
+        "employee_id": 3,
+        "salary_amount": 50000,
+        "salary_id": 3
+    },
+    {
+        "employee_id": 4,
+        "salary_amount": 50000,
+        "salary_id": 4
+    },
+    {
+        "employee_id": 5,
+        "salary_amount": 60000,
+        "salary_id": 5
+    },
+    {
+        "employee_id": 6,
+        "salary_amount": 55000,
+        "salary_id": 6
+    },
+    {
+        "employee_id": 7,
+        "salary_amount": 48000,
+        "salary_id": 7
+    },
+    {
+        "employee_id": 8,
+        "salary_amount": 48000,
+        "salary_id": 8
+    },
+    {
+        "employee_id": 9,
+        "salary_amount": 52000,
+        "salary_id": 9
+    },
+    {
+        "employee_id": 10,
+        "salary_amount": 52000,
+        "salary_id": 10
+    },
+    {
+        "employee_id": 12,
+        "salary_amount": 58000,
+        "salary_id": 11
+    },
+    {
+        "employee_id": 13,
+        "salary_amount": 78000,
+        "salary_id": 12
+    },
+    {
+        "employee_id": 14,
+        "salary_amount": 78000,
+        "salary_id": 13
+    },
+    {
+        "employee_id": 15,
+        "salary_amount": 46000,
+        "salary_id": 14
+    },
+    {
+        "employee_id": 16,
+        "salary_amount": 46000,
+        "salary_id": 15
+    },
+    {
+        "employee_id": 17,
+        "salary_amount": 54000,
+        "salary_id": 16
+    },
+    {
+        "employee_id": 18,
+        "salary_amount": 48000,
+        "salary_id": 17
+    },
+    {
+        "employee_id": 19,
+        "salary_amount": 44000,
+        "salary_id": 18
+    },
+    {
+        "employee_id": 20,
+        "salary_amount": 44000,
+        "salary_id": 19
+    },
+    {
+        "employee_id": 21,
+        "salary_amount": 47000,
+        "salary_id": 20
+    },
+    {
+        "employee_id": 22,
+        "salary_amount": 47000,
+        "salary_id": 21
+    },
+    {
+        "employee_id": 23,
+        "salary_amount": 50000,
+        "salary_id": 22
+    },
+    {
+        "employee_id": 24,
+        "salary_amount": 45000,
+        "salary_id": 23
+    },
+    {
+        "employee_id": 25,
+        "salary_amount": 42000,
+        "salary_id": 24
+    },
+    {
+        "employee_id": 26,
+        "salary_amount": 42000,
+        "salary_id": 25
+    },
+    {
+        "employee_id": 27,
+        "salary_amount": 75000,
+        "salary_id": 26
+    },
+    {
+        "employee_id": 28,
+        "salary_amount": 75000,
+        "salary_id": 27
+    },
+    {
+        "employee_id": 29,
+        "salary_amount": 45000,
+        "salary_id": 28
+    },
+    {
+        "employee_id": 30,
+        "salary_amount": 40000,
+        "salary_id": 29
+    }
+]
