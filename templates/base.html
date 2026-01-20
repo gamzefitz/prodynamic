@@ -4,6 +4,12 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Salary Admin</title>
+    <a href="{{ url_for('table_view', table_name='Salary') }}">Salaries</a>
+    <a href="{{ url_for('table_view', table_name='Employee') }}">Employees</a>
+    <a href="{{ url_for('table_view', table_name='Department') }}"
+      >Departments</a
+    >
+
     <style>
       body {
         font-family: system-ui, Arial;

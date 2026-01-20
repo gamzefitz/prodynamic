@@ -48,7 +48,7 @@
             class="inline"
             method="post"
             action="{{ url_for('delete_salary', salary_id=r['salary_id']) }}"
-            onsubmit="return confirm('Delete salary_id {{ r['salary_id'] }}?');"
+            onsubmit="return confirm('Delete salary_id ' + {{ r['salary_id'] }} + '?');"
           >
             <button class="btn btn-danger" type="submit">Delete</button>
           </form>

@@ -1,0 +1,57 @@
+{% extends "base.html" %} {% block content %}
+
+<h2>CRUD: {{ current_table }}</h2>
+
+<nav style="margin-bottom: 12px">
+  {% for t in tables %} {% if t in ["Department","Employee","Job","Salary"] %}
+  <a class="btn" href="{{ url_for('crud_list', table_name=t) }}">{{ t }}</a>
+  {% endif %} {% endfor %}
+</nav>
+
+<a class="btn" href="{{ url_for('crud_add', table_name=current_table) }}"
+  >Add</a
+>
+
+<table>
+  <thead>
+    <tr>
+      <th>{{ pk }}</th>
+      {% for c in cols %}
+      <th>{{ c }}</th>
+      {% endfor %}
+      <th>Actions</th>
+    </tr>
+  </thead>
+  <tbody>
+    {% for r in rows %}
+    <tr>
+      <td>{{ r[pk] }}</td>
+      {% for c in cols %}
+      <td>{{ r[c] }}</td>
+      {% endfor %}
+      <td>
+        <a
+          class="btn"
+          href="{{ url_for('crud_edit', table_name=current_table, row_id=r[pk]) }}"
+          >Edit</a
+        >
+        <form
+          method="post"
+          action="{{ url_for('crud_delete', table_name=current_table, row_id=r[pk]) }}"
+          style="display: inline"
+        >
+          <button
+            class="btn"
+            type="submit"
+            onclick="return confirm('Delete this row?');"
+          >
+            Delete
+          </button>
+        </form>
+      </td>
+    </tr>
+    {% endfor %}
+  </tbody>
+</table>
+
+{% endblock %}
