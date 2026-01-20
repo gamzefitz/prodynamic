@@ -1,0 +1,28 @@
+{% extends "base.html" %} {% block content %}
+<h1>{{ "Add Salary" if mode == "add" else "Edit Salary" }}</h1>
+
+<form method="post">
+  <div class="field">
+    <label>employee_id</label>
+    <input
+      name="employee_id"
+      value="{{ '' if not row else row.employee_id }}"
+      required
+    />
+  </div>
+
+  <div class="field">
+    <label>salary_amount</label>
+    <input
+      name="salary_amount"
+      value="{{ '' if not row else row.salary_amount }}"
+      required
+    />
+  </div>
+
+  <div class="actions">
+    <button class="btn btn-primary" type="submit">Save</button>
+    <a class="btn" href="{{ url_for('index') }}">Cancel</a>
+  </div>
+</form>
+{% endblock %}
