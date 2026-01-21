@@ -1,0 +1,11 @@
+{% extends "base.html" %} {% block content %}
+
+<h2>Tables</h2>
+
+<nav style="margin-bottom: 12px">
+  {% for t in tables %}
+  <a class="btn" href="{{ url_for('crud_list', table_name=t) }}">{{ t }}</a>
+  {% endfor %}
+</nav>
+
+{% endblock %}

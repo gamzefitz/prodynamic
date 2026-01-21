@@ -3,9 +3,10 @@
 <h2>CRUD: {{ current_table }}</h2>
 
 <nav style="margin-bottom: 12px">
-  {% for t in tables %} {% if t in ["Department","Employee","Job","Salary"] %}
+  <a class="btn" href="{{ url_for('crud_index') }}">All tables</a>
+  {% for t in tables %}
   <a class="btn" href="{{ url_for('crud_list', table_name=t) }}">{{ t }}</a>
-  {% endif %} {% endfor %}
+  {% endfor %}
 </nav>
 
 <a class="btn" href="{{ url_for('crud_add', table_name=current_table) }}"
@@ -22,6 +23,7 @@
       <th>Actions</th>
     </tr>
   </thead>
+
   <tbody>
     {% for r in rows %}
     <tr>
@@ -33,8 +35,10 @@
         <a
           class="btn"
           href="{{ url_for('crud_edit', table_name=current_table, row_id=r[pk]) }}"
-          >Edit</a
         >
+          Edit
+        </a>
+
         <form
           method="post"
           action="{{ url_for('crud_delete', table_name=current_table, row_id=r[pk]) }}"

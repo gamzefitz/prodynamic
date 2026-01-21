@@ -3,12 +3,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Salary Admin</title>
-    <a href="{{ url_for('table_view', table_name='Salary') }}">Salaries</a>
-    <a href="{{ url_for('table_view', table_name='Employee') }}">Employees</a>
-    <a href="{{ url_for('table_view', table_name='Department') }}"
-      >Departments</a
-    >
+    <title>ProDynamic Admin</title>
 
     <style>
       body {
@@ -37,30 +32,11 @@
       button {
         cursor: pointer;
       }
-      .actions {
-        display: flex;
-        gap: 8px;
-      }
-      .topbar {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-      }
       .flash {
         background: #fff3cd;
         border: 1px solid #ffeeba;
         padding: 10px;
         margin: 10px 0;
-      }
-      .field {
-        display: grid;
-        gap: 6px;
-        margin: 10px 0;
-      }
-      input {
-        padding: 10px;
-        border: 1px solid #ddd;
-        border-radius: 6px;
       }
       .btn {
         padding: 10px 12px;
@@ -69,22 +45,53 @@
         border-radius: 6px;
         text-decoration: none;
         color: inherit;
-      }
-      .btn-primary {
-        border-color: #0b5ed7;
-      }
-      .btn-danger {
-        border-color: #dc3545;
+        display: inline-block;
       }
       form.inline {
         display: inline;
       }
+      .nav {
+        display: flex;
+        gap: 8px;
+        flex-wrap: wrap;
+        margin-bottom: 12px;
+      }
+      .header {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-bottom: 12px;
+      }
     </style>
   </head>
+
   <body>
     <div class="container">
-      {% with messages = get_flashed_messages() %} {% if messages %} {% for msg
-      in messages %}
+      <div class="header">
+        <a class="btn" href="{{ url_for('crud_index') }}">Tables</a>
+
+        <div class="nav">
+          <a
+            class="btn"
+            href="{{ url_for('crud_list', table_name='Department') }}"
+            >Department</a
+          >
+          <a class="btn" href="{{ url_for('crud_list', table_name='Job') }}"
+            >Job</a
+          >
+          <a
+            class="btn"
+            href="{{ url_for('crud_list', table_name='Employee') }}"
+            >Employee</a
+          >
+          <a class="btn" href="{{ url_for('crud_list', table_name='Salary') }}"
+            >Salary</a
+          >
+        </div>
+      </div>
+
+      {% with messages = get_flashed_messages(with_categories=true) %} {% if
+      messages %} {% for category, msg in messages %}
       <div class="flash">{{ msg }}</div>
       {% endfor %} {% endif %} {% endwith %} {% block content %}{% endblock %}
     </div>

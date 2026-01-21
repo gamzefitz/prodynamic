@@ -5,6 +5,7 @@
 <form method="post">
   {% for c in cols %}
   <label>{{ c }}</label>
+
   {% set t = types.get(c, "text") %} {% if t == "bool" %} {% set current =
   (row[c] if row else "False") %}
   <select name="{{ c }}">
@@ -55,7 +56,7 @@
   />
 
   {% else %}
-  <input name="{{ c }}" value="{{ row[c] if row else '' }}" />
+  <input type="text" name="{{ c }}" value="{{ row[c] if row else '' }}" />
   {% endif %} {% endfor %}
 
   <button class="btn" type="submit">Save</button>
