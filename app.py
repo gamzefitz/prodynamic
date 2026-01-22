@@ -2,13 +2,19 @@ from flask import Flask, render_template, request, redirect, url_for, flash, abo
 import sqlite3
 import os
 
+# Create the Flask application
 app = Flask(__name__)
+
+# Secret key needed for flash messages and sessions
 app.secret_key = "dev"
 
+# Get the absolute path of this file's directory
 BASE_DIR = os.path.dirname(os.path.abspath(__file__))
+# Build the full path to the SQLite database
 DB_PATH = os.path.join(BASE_DIR, "prodynamic.db")
 
 # Only these tables will be exposed in the CRUD UI
+# CRUD configuration
 CRUD = {
     "Department": {
         "pk": "department_id",
@@ -51,12 +57,15 @@ CRUD = {
 }
 
 
+# Opens a connection to the SQLite database.
+# row_factory allows rows to behave like dictionaries.
 def get_db():
     conn = sqlite3.connect(DB_PATH)
     conn.row_factory = sqlite3.Row
     return conn
 
-
+# Returns a list of all user-defined tables in the database.
+# Internal SQLite tables are excluded.
 def list_tables(conn):
     return [
         r["name"]
@@ -67,7 +76,8 @@ def list_tables(conn):
         ).fetchall()
     ]
 
-
+# Returns the CRUD configuration for a table.
+# If the table is not allowed, return a 404 error.
 def get_cfg(table_name: str):
     cfg = CRUD.get(table_name)
     if not cfg:
@@ -75,6 +85,8 @@ def get_cfg(table_name: str):
     return cfg
 
 
+# Converts form input (always strings) into the correct data type
+# before inserting/updating the database.
 def coerce_value(raw, typ: str):
     raw = (raw or "").strip()
 
@@ -101,6 +113,7 @@ def coerce_value(raw, typ: str):
     return raw if raw != "" else None
 
 
+# Redirect root URL to the CRUD index page.
 @app.route("/")
 def home():
     return redirect(url_for("crud_index"))
@@ -120,6 +133,7 @@ def crud_index():
     return render_template("crud_index.html", tables=tables)
 
 
+# Displays all rows for a given table.
 @app.route("/crud/<table_name>")
 def crud_list(table_name):
     cfg = get_cfg(table_name)
@@ -148,6 +162,7 @@ def crud_list(table_name):
     )
 
 
+# Adds a new row to the selected table.
 @app.route("/crud/<table_name>/add", methods=["GET", "POST"])
 def crud_add(table_name):
     cfg = get_cfg(table_name)
@@ -182,6 +197,7 @@ def crud_add(table_name):
     return render_template("crud_form.html", table_name=table_name, cols=cols, row=None, types=types)
 
 
+# Edits an existing row in the table.
 @app.route("/crud/<table_name>/<int:row_id>/edit", methods=["GET", "POST"])
 def crud_edit(table_name, row_id):
     cfg = get_cfg(table_name)
@@ -231,6 +247,7 @@ def crud_edit(table_name, row_id):
     return render_template("crud_form.html", table_name=table_name, cols=cols, row=row, types=types)
 
 
+# Deletes a row from the table.
 @app.route("/crud/<table_name>/<int:row_id>/delete", methods=["POST"])
 def crud_delete(table_name, row_id):
     cfg = get_cfg(table_name)
@@ -248,6 +265,6 @@ def crud_delete(table_name, row_id):
     flash("Row deleted.", "success")
     return redirect(url_for("crud_list", table_name=table_name))
 
-
+# Run the app
 if __name__ == "__main__":
     app.run(debug=True)
